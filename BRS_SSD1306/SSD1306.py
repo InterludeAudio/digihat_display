@@ -18,12 +18,12 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
-from __future__ import division
 import logging
 import time
 
-import Adafruit_GPIO as GPIO
-import Adafruit_GPIO.SPI as SPI
+import RPi.GPIO as GPIO
+#import Adafruit_GPIO.SPI as SPI
+import smbus
 
 
 # Constants
@@ -75,6 +75,7 @@ class SSD1306Base(object):
         self._log = logging.getLogger('Adafruit_SSD1306.SSD1306Base')
         self._spi = None
         self._i2c = None
+        self._i2c_addr = i2c_address
         self.width = width
         self.height = height
         self._pages = height//8
@@ -82,7 +83,7 @@ class SSD1306Base(object):
         # Default to platform GPIO if not provided.
         self._gpio = gpio
         if self._gpio is None:
-            self._gpio = GPIO.get_platform_gpio()
+            self._gpio = GPIO
         # Setup reset pin.
         self._rst = rst
         if not self._rst is None:
@@ -94,19 +95,17 @@ class SSD1306Base(object):
             self._spi.set_clock_hz(8000000)
         # Handle software SPI
         elif sclk is not None and din is not None and cs is not None:
-            self._log.debug('Using software SPI')
-            self._spi = SPI.BitBang(self._gpio, sclk, din, None, cs)
+            self._log.error('SPI BitBand device not supported')
         # Handle hardware I2C
         elif i2c is not None:
             self._log.debug('Using hardware I2C with custom I2C provider.')
-            self._i2c = i2c.get_i2c_device(i2c_address)
+            self._i2c = i2c
         else:
             self._log.debug('Using hardware I2C with platform I2C provider.')
-            import Adafruit_GPIO.I2C as I2C
             if i2c_bus is None:
-                self._i2c = I2C.get_i2c_device(i2c_address)
+                self._i2c = smbus.SMBus(1)
             else:
-                self._i2c = I2C.get_i2c_device(i2c_address, busnum=i2c_bus)
+                self._i2c = smbus.SMBus(i2c_bus)
         # Initialize DC pin if using SPI.
         if self._spi is not None:
             if dc is None:
@@ -126,7 +125,7 @@ class SSD1306Base(object):
         else:
             # I2C write.
             control = 0x00   # Co = 0, DC = 0
-            self._i2c.write8(control, c)
+            self._i2c.write_i2c_block_data(self._i2c_addr, control, [c])
 
     def data(self, c):
         """Send byte of data to display."""
@@ -137,7 +136,7 @@ class SSD1306Base(object):
         else:
             # I2C write.
             control = 0x40   # Co = 0, DC = 0
-            self._i2c.write8(control, c)
+            self._i2c.write_i2c_block_data(self._i2c_addr, control, [c])
 
     def begin(self, vccstate=SSD1306_SWITCHCAPVCC):
         """Initialize display."""
@@ -179,7 +178,7 @@ class SSD1306Base(object):
         else:
             for i in range(0, len(self._buffer), 16):
                 control = 0x40   # Co = 0, DC = 0
-                self._i2c.writeList(control, self._buffer[i:i+16])
+                self._i2c.write_i2c_block_data(self._i2c_addr, control, self._buffer[i:i+16])
 
     def image(self, image):
         """Set buffer to value of Python Imaging Library image.  The image should
