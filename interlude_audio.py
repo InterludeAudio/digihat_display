@@ -94,11 +94,11 @@ def update_stats(image):
 def display_splash(image):
     logo = Image.open('logo3.png').convert('1')
 
-    print(f"logo size {logo.width}, {logo.height}")
-    print(f"disp size {disp.width}, {disp.height}")
+    #print(f"logo size {logo.width}, {logo.height}")
+    #print(f"disp size {disp.width}, {disp.height}")
     offset_x = (disp.width-logo.width)/2
     offset_y = (disp.height-logo.height)/2
-    print(f"disp size {offset_x}, {offset_y}")
+    #print(f"disp size {offset_x}, {offset_y}")
 
     draw = ImageDraw.Draw(image)
     draw.rectangle((0,0,image.width-1,image.height-1), outline=1, fill=0)
