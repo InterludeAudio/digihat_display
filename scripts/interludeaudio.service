@@ -1,0 +1,11 @@
+[Unit]
+Description = Interlude Audio Display Service
+After = multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/interlude_audio/digihat_display/scripts/display_start.sh
+
+[Install]
+WantedBy=multi-user.target
+

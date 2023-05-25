@@ -53,9 +53,9 @@ def update_stats(image):
     # Get drawing object to draw on image.
     draw = ImageDraw.Draw(image)
     # Load default font.
-    font_small = ImageFont.truetype("Questrial-Regular.ttf", 10)
-    font_medium = ImageFont.truetype("Questrial-Regular.ttf", 14)
-    font_large = ImageFont.truetype("Questrial-Regular.ttf", 24)
+    font_small = ImageFont.truetype("assets/Questrial-Regular.ttf", 10)
+    font_medium = ImageFont.truetype("assets/Questrial-Regular.ttf", 14)
+    font_large = ImageFont.truetype("assets/Questrial-Regular.ttf", 24)
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,image.width,image.height), outline=0, fill=0)
 
@@ -92,7 +92,7 @@ def update_stats(image):
 
 
 def display_splash(image):
-    logo = Image.open('logo3.png').convert('1')
+    logo = Image.open('assets/logo3.png').convert('1')
 
     #print(f"logo size {logo.width}, {logo.height}")
     #print(f"disp size {disp.width}, {disp.height}")
