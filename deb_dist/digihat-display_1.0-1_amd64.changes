@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Mon, 10 Jul 2023 11:52:13 -0700
+Source: digihat-display
+Binary: python3-digihat-display
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Ben Payne, Yash Gandhi <yash@bluerocksoft.com>
+Changed-By: Ben Payne, Yash Gandhi <yash@bluerocksoft.com>
+Description:
+ python3-digihat-display - python code for digital hat display
+Changes:
+ digihat-display (1.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.10.0
+Checksums-Sha1:
+ 8c24a72d243095f45d0fa1f880bdb259d7d4de05 6515 digihat-display_1.0-1_amd64.buildinfo
+ c996e771780c203420e092371c316376ec0ca6d8 5914 python3-digihat-display_1.0-1_all.deb
+Checksums-Sha256:
+ 1f0413753ee8fdfe6e3aad99a95024e819c97f1fcda09b15ec04b6d25a6c1b7f 6515 digihat-display_1.0-1_amd64.buildinfo
+ 8b0c0fca5df647acd97caaadb0ae6136ba50605b55c1bfbcb0f855c0e1172e99 5914 python3-digihat-display_1.0-1_all.deb
+Files:
+ e9abebe8140ffaefe3a2b16b3f3fc0ad 6515 python optional digihat-display_1.0-1_amd64.buildinfo
+ 89bae3981766c79980150968de4a7910 5914 python optional python3-digihat-display_1.0-1_all.deb

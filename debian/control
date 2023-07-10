@@ -1,0 +1,15 @@
+Source: digihat-displayV1.0
+Section: python
+Priority: optional
+Maintainer: Yash Gandhi <yash@bluerocksoft.com>
+Build-Depends: python3 (>= version), dependency2 (<< version)
+Standards-Version: 4.5.1
+Homepage: https://example.com
+Vcs-Git: https://git.example.com/package.git
+Vcs-Browser: https://git.example.com/package
+
+Package: package-name
+Architecture: any
+Depends: dependency3, ${shlibs:Depends}, ${misc:Depends}
+Description: Package Description
+ A detailed description of the package.

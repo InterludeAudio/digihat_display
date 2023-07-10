@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Mon, 10 Jul 2023 11:52:13 -0700
+Source: digihat-display
+Built-For-Profiles: noudeb
+Architecture: source
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Ben Payne, Yash Gandhi <yash@bluerocksoft.com>
+Changed-By: Ben Payne, Yash Gandhi <yash@bluerocksoft.com>
+Changes:
+ digihat-display (1.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.10.0
+Checksums-Sha1:
+ c48c35b9a9ec64f039d00e5e2e3a40f0097b901d 945 digihat-display_1.0-1.dsc
+ 22122d63af122dce8df790e35e93db93012cb939 5139 digihat-display_1.0.orig.tar.gz
+ 01e84de4cfe98f25ba183752ac669f15b5dd1fde 1160 digihat-display_1.0-1.debian.tar.xz
+ 2a746a5498c2863a4d85818bc4d0d264394e0101 6447 digihat-display_1.0-1_source.buildinfo
+Checksums-Sha256:
+ 7401329f9265f613e11dbe8e04edb2a0eccd3eeb7420de9dca801f978c5414a7 945 digihat-display_1.0-1.dsc
+ 493f7ce0e880aad45d942004fb0c7e6cdabceb96e08e4d71d71e74786ca95b96 5139 digihat-display_1.0.orig.tar.gz
+ 66309eed12f175aeaa8f4cf7617fb418929a9008eaddc640b6922801c6439a24 1160 digihat-display_1.0-1.debian.tar.xz
+ 9d60828e52bfaf443589d8bae599b5cc262f855fd23cb03825b6e0bbae124ac5 6447 digihat-display_1.0-1_source.buildinfo
+Files:
+ e066780484ab08bfe9de5c0ade74beda 945 python optional digihat-display_1.0-1.dsc
+ d0ba232684659840f74c37b2dab555d1 5139 python optional digihat-display_1.0.orig.tar.gz
+ 2f96581d3cf6846373bcdb1ecdc5ebbc 1160 python optional digihat-display_1.0-1.debian.tar.xz
+ 516ad951a046dff518cf5ee7f655369b 6447 python optional digihat-display_1.0-1_source.buildinfo
