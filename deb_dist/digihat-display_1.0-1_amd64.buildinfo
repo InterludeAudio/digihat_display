@@ -4,14 +4,14 @@ Binary: python3-digihat-display
 Architecture: all
 Version: 1.0-1
 Checksums-Md5:
- 89bae3981766c79980150968de4a7910 5914 python3-digihat-display_1.0-1_all.deb
+ 42389afe0893c8fae3d741fb8a66c1cf 6494 python3-digihat-display_1.0-1_all.deb
 Checksums-Sha1:
- c996e771780c203420e092371c316376ec0ca6d8 5914 python3-digihat-display_1.0-1_all.deb
+ d673832b2428e19afec74ea9ffe379b6ece24f6c 6494 python3-digihat-display_1.0-1_all.deb
 Checksums-Sha256:
- 8b0c0fca5df647acd97caaadb0ae6136ba50605b55c1bfbcb0f855c0e1172e99 5914 python3-digihat-display_1.0-1_all.deb
+ c3b525c0bb53be5f689b249e74332d0aaed07e98d929a89f01aa8a1dc6655fce 6494 python3-digihat-display_1.0-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 10 Jul 2023 11:52:15 -0700
+Build-Date: Wed, 12 Jul 2023 10:50:25 -0700
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -194,4 +194,4 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=12"
  DEB_BUILD_PROFILES="noudeb"
  LANG="C.UTF-8"
- SOURCE_DATE_EPOCH="1689015133"
+ SOURCE_DATE_EPOCH="1689184222"

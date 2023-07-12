@@ -10,11 +10,11 @@ Build-Depends: python3-setuptools, python3-all, debhelper (>= 9)
 Package-List:
  python3-digihat-display deb python optional arch=all
 Checksums-Sha1:
- 22122d63af122dce8df790e35e93db93012cb939 5139 digihat-display_1.0.orig.tar.gz
- 01e84de4cfe98f25ba183752ac669f15b5dd1fde 1160 digihat-display_1.0-1.debian.tar.xz
+ bf9496be22b59a3ac4d8e7213586806d59c5a781 5233 digihat-display_1.0.orig.tar.gz
+ a10bfe29702d901c88f883487573776e0dfe5d8d 1160 digihat-display_1.0-1.debian.tar.xz
 Checksums-Sha256:
- 493f7ce0e880aad45d942004fb0c7e6cdabceb96e08e4d71d71e74786ca95b96 5139 digihat-display_1.0.orig.tar.gz
- 66309eed12f175aeaa8f4cf7617fb418929a9008eaddc640b6922801c6439a24 1160 digihat-display_1.0-1.debian.tar.xz
+ f14faed40967f3472c988cba30042d36082da02f1552d3bdfe57ef73600dd310 5233 digihat-display_1.0.orig.tar.gz
+ ac19f10ee6eceb9d7e53373ee5d3613b2c10dccc3cb7292e0bfcbc1918b15099 1160 digihat-display_1.0-1.debian.tar.xz
 Files:
- d0ba232684659840f74c37b2dab555d1 5139 digihat-display_1.0.orig.tar.gz
- 2f96581d3cf6846373bcdb1ecdc5ebbc 1160 digihat-display_1.0-1.debian.tar.xz
+ fed2e5ee68fe9544a14c372e85a50a34 5233 digihat-display_1.0.orig.tar.gz
+ 6525f79f56bb57e95f248974a318c17a 1160 digihat-display_1.0-1.debian.tar.xz

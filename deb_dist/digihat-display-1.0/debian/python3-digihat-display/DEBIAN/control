@@ -3,7 +3,7 @@ Source: digihat-display
 Version: 1.0-1
 Architecture: all
 Maintainer: Ben Payne, Yash Gandhi <yash@bluerocksoft.com>
-Installed-Size: 34
+Installed-Size: 37
 Depends: python3:any
 Section: python
 Priority: optional

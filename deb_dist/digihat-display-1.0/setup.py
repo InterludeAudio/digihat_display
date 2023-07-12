@@ -26,4 +26,10 @@ setup(name              = 'Digihat_display',
       license           = 'MIT',
       classifiers       = classifiers,
       url               = 'https://github.com/InterludeAudio/digihat_display',
-      packages          = find_packages())
+      packages          = find_packages(),
+      entry_points={
+        'console_scripts': [
+            'display.py = Digihat_display.module:main',
+        ]
+    }
+)

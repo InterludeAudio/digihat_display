@@ -3,14 +3,14 @@ Source: digihat-display
 Architecture: source
 Version: 1.0-1
 Checksums-Md5:
- e066780484ab08bfe9de5c0ade74beda 945 digihat-display_1.0-1.dsc
+ 1d908158b664c600241c302ef81d2a7f 945 digihat-display_1.0-1.dsc
 Checksums-Sha1:
- c48c35b9a9ec64f039d00e5e2e3a40f0097b901d 945 digihat-display_1.0-1.dsc
+ 926478bf8aa8a21a1f222f3299e040ca2a33db2c 945 digihat-display_1.0-1.dsc
 Checksums-Sha256:
- 7401329f9265f613e11dbe8e04edb2a0eccd3eeb7420de9dca801f978c5414a7 945 digihat-display_1.0-1.dsc
+ ea831c272af3f4307b1873b95fed294cdfc1d2261ac32a9c6c720ad201c55674 945 digihat-display_1.0-1.dsc
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 10 Jul 2023 11:52:14 -0700
+Build-Date: Wed, 12 Jul 2023 10:50:23 -0700
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -193,4 +193,4 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=12"
  DEB_BUILD_PROFILES="noudeb"
  LANG="C.UTF-8"
- SOURCE_DATE_EPOCH="1689015133"
+ SOURCE_DATE_EPOCH="1689184222"

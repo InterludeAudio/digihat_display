@@ -1,5 +1,5 @@
 Format: 1.8
-Date: Mon, 10 Jul 2023 11:52:13 -0700
+Date: Wed, 12 Jul 2023 10:50:22 -0700
 Source: digihat-display
 Binary: python3-digihat-display
 Built-For-Profiles: noudeb
@@ -16,11 +16,11 @@ Changes:
  .
    * source package automatically created by stdeb 0.10.0
 Checksums-Sha1:
- 8c24a72d243095f45d0fa1f880bdb259d7d4de05 6515 digihat-display_1.0-1_amd64.buildinfo
- c996e771780c203420e092371c316376ec0ca6d8 5914 python3-digihat-display_1.0-1_all.deb
+ b33411c9c362826c529b38dd8f560920189a3bad 6515 digihat-display_1.0-1_amd64.buildinfo
+ d673832b2428e19afec74ea9ffe379b6ece24f6c 6494 python3-digihat-display_1.0-1_all.deb
 Checksums-Sha256:
- 1f0413753ee8fdfe6e3aad99a95024e819c97f1fcda09b15ec04b6d25a6c1b7f 6515 digihat-display_1.0-1_amd64.buildinfo
- 8b0c0fca5df647acd97caaadb0ae6136ba50605b55c1bfbcb0f855c0e1172e99 5914 python3-digihat-display_1.0-1_all.deb
+ f64c9f9daec5bce878f1c3c8fc2385c8bead7536226540d580921dffe4ff61f9 6515 digihat-display_1.0-1_amd64.buildinfo
+ c3b525c0bb53be5f689b249e74332d0aaed07e98d929a89f01aa8a1dc6655fce 6494 python3-digihat-display_1.0-1_all.deb
 Files:
- e9abebe8140ffaefe3a2b16b3f3fc0ad 6515 python optional digihat-display_1.0-1_amd64.buildinfo
- 89bae3981766c79980150968de4a7910 5914 python optional python3-digihat-display_1.0-1_all.deb
+ 23320a79d8c8e941ca03950fbc67df7c 6515 python optional digihat-display_1.0-1_amd64.buildinfo
+ 42389afe0893c8fae3d741fb8a66c1cf 6494 python optional python3-digihat-display_1.0-1_all.deb
