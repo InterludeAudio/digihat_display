@@ -28,7 +28,7 @@ TEST_MAX = False
 # 128x32 display with hardware I2C:
 disp = BRS_SSD1306.SSD1306_128_32(rst=RST)
 
-# format of the proc entry at /proc/asound/card0/pcm0p/sub0/hw_params
+# format of the proc entry at /proc/asound/sndIADigitalHat/pcm0p/sub0/hw_params
 # access: MMAP_INTERLEAVED
 # format: S24_LE
 # subformat: STD
@@ -37,7 +37,7 @@ disp = BRS_SSD1306.SSD1306_128_32(rst=RST)
 # period_size: 1470
 # buffer_size: 22050
 def get_sample_rate():
-    sample_fd = open("/proc/asound/card0/pcm0p/sub0/hw_params","r")
+    sample_fd = open("/proc/asound/sndIADigitalHat/pcm0p/sub0/hw_params","r")
     string_data = sample_fd.readlines()
     sample_fd.close()
     
@@ -76,7 +76,8 @@ def update_stats(image):
     # start just above screen with text so that it doesn't leave blank space at the top of the screen
     top = -2
 
-    draw.text((0, top),       "IP: " + str(ip_str),  font=font_medium, fill=255)
+    draw.text((0, top),       "IP : " ,  font=font_medium, fill=255)
+    draw.text((40,top), str(ip_str), font=font_medium, fill=255)
     draw.text((0, top+14),    "Sample",  font=font_small, fill=255)
     draw.text((0, top+22),    "Rate",  font=font_small, fill=255)
 
