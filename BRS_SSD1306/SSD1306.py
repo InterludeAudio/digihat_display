@@ -21,9 +21,17 @@
 import logging
 import time
 
-import RPi.GPIO as GPIO
 #import Adafruit_GPIO.SPI as SPI
 import smbus
+
+# RPi.GPIO is only needed when a reset (rst) or data/command (dc) pin is
+# used.  The Digital Hat display is I2C-only with no reset line, so the
+# import is optional: this keeps the package working on the Pi 5, where
+# the classic RPi.GPIO library does not load.
+try:
+    import RPi.GPIO as GPIO
+except ImportError:  # pragma: no cover
+    GPIO = None
 
 
 # Constants
@@ -87,6 +95,8 @@ class SSD1306Base(object):
         # Setup reset pin.
         self._rst = rst
         if not self._rst is None:
+            if self._gpio is None:
+                raise RuntimeError('A GPIO library is required when a reset pin is used')
             self._gpio.setup(self._rst, GPIO.OUT)
         # Handle hardware SPI
         if spi is not None:
@@ -111,6 +121,8 @@ class SSD1306Base(object):
             if dc is None:
                 raise ValueError('DC pin must be provided when using SPI.')
             self._dc = dc
+            if self._gpio is None:
+                raise RuntimeError('A GPIO library is required when using SPI')
             self._gpio.setup(self._dc, GPIO.OUT)
 
     def _initialize(self):
